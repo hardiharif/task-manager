@@ -35,7 +35,7 @@ def create_task():
     task.description = request.json['description']
     task.status = request.json['status']
 
-    if task.description is '':
+    if task.description == '':
         return jsonify({
             "error": "no description provided"
         })

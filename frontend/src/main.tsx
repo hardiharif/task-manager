@@ -27,7 +27,7 @@ function App() {
       if (!r.ok) throw new Error();
       setTasks(await r.json());
     } catch {
-      setError("Could not connect to the API. Is FastAPI running?");
+      setError("Could not connect to the API. Is Backend running?");
     } finally {
       setLoading(false);
     }
